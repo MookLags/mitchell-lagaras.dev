@@ -17,6 +17,3 @@ services:
       - type: rewrite
         source: /contact
         destination: /contact.html
-      - type: rewrite
-        source: /projects
-        destination: /projects.html
