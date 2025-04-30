@@ -122,41 +122,6 @@ if (document.title === "Mitchell Lagaras | Web Developer") {
   rightButton.addEventListener('click', handleRightScrollButton);
 }
 
-// contact form
-if (document.title === "Contact | Mitchell Lagaras Web Developer" || document.title === "Mitchell Lagaras | Web Developer") {
-  const contactForm = document.querySelector('.contact-form');
-  contactForm.addEventListener('submit', function (event) {
-  console.log(contactForm);
-    event.preventDefault();
-
-    const name = contactForm.querySelector('input[name="name"]');
-    const email = contactForm.querySelector('input[name="email"]');
-    const message = contactForm.querySelector('textarea[name="message"]');
-    
-    if (!name || !email || !message) {
-      alert("Please ensure all fields are filled out.");
-      return;
-    }
-
-    const formData = new FormData(this);
-
-    fetch("/contact.php", {
-      method: "POST",
-      body: formData
-    })
-    .then(response => response.text())
-    .then(data => {
-      alert("Thank you! Your message was sent successfully.");
-      this.reset();
-    })
-    .catch(error => {
-      alert("Something went wrong. Please try again later.");
-      console.error("Error: ", error);
-    });
-  });
-  console.log(contactForm);
-}
-
 // blog
 if (document.title === "Blog | Mitchell Lagaras Web Developer") {
   const blogMonthButton = document.querySelectorAll('.blog-month-button');
