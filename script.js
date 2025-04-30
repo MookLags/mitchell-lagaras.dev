@@ -14,6 +14,10 @@ const displayNavOnSmallScreens = () => {
   navVisible = !navVisible;
 };
 
+document.addEventListener("DOMContentLoaded", () => {
+  hamburger.addEventListener("click", displayNavOnSmallScreens);
+})
+
 let titleList = [
   'full-stack web developer',
   'front-end web developer',
