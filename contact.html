@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset='utf-8' />
     <meta name='viewport' content='width=device-width, initial-scale=1.0' />
@@ -12,12 +12,12 @@
   <body>
     <header>
       <h1><a href="/index.html">Mitchell Lagaras</a></h1>
-      <button class="hamburger hidden">☰</button>
+      <button name="small-screen-nav-button" class="hamburger hidden">☰</button>
       <nav role="navigation">
         <ul class="nav-ul">
           <li class="nav-li"><a href="/index.html">Home</a></li>
           <li class="nav-li"><a href="/about.html">About</a></li>
-          <li class="nav-li projects-li">Projects<img src="/assets/coming-soon.gif" /></li>
+          <li class="nav-li projects-li">Projects<img src="/assets/coming-soon.gif" alt="Coming Soon!" /></li>
           <li class="nav-li"><a href="/blog.html">Blog</a></li>
           <li class="nav-li active-page">Contact</li>
         </ul>
@@ -32,15 +32,15 @@
         <div class="contact-quick-links">
           <div class="contact-data">
             <span>Call Me</span>
-            <a href="tel:+13305027737">+1 (330) 502-7737<img class="contact-info-arrow" src="/assets/arrows/right-arrow.svg" /></a>
+            <a href="tel:+13305027737">+1 (330) 502-7737<img class="contact-info-arrow" src="/assets/arrows/right-arrow.svg" alt="=>" /></a>
           </div>
           <div class="contact-data">
             <span>Email Me</span>
-            <a href="mailto:contact@mitchell-lagaras.dev">contact@mitchell-lagaras.dev<img class="contact-info-arrow" src="/assets/arrows/right-arrow.svg" /></a>
+            <a href="mailto:contact@mitchell-lagaras.dev">contact@mitchell-lagaras.dev<img class="contact-info-arrow" src="/assets/arrows/right-arrow.svg" alt="=>" /></a>
           </div>
           <div class="contact-data">
             <span>Find me on LinkedIn</span>
-            <a href="https://www.linkedin.com/in/j-mitchell-lagaras-b458a1260/" target="_blank">Connect With Me<img class="contact-info-arrow" src="/assets/arrows/right-arrow.svg" /></a>
+            <a href="https://www.linkedin.com/in/j-mitchell-lagaras-b458a1260/" target="_blank">Connect With Me<img class="contact-info-arrow" src="/assets/arrows/right-arrow.svg" alt="=>" /></a>
           </div>
         </div>
         <div class="form-div">
@@ -51,7 +51,7 @@
             <input type="email" name="email" placeholder="john-doe@mail.com" />
             <label class="input-label" for="email"></label>
             <textarea name="message" placeholder="I've got an idea..."></textarea>
-            <button type="submit">SEND</button>
+            <button name="contact-submit-button" type="submit">SEND</button>
           </form>
         </div>
       </section>
