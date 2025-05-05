@@ -128,6 +128,8 @@ if (document.title === "Mitchell Lagaras | Web Developer") {
 
 // blog
 if (document.title === "Blog | Mitchell Lagaras Web Developer") {
+
+/*
   const blogMonthButton = document.querySelectorAll('.blog-month-button');
   const blogLink = document.querySelectorAll('.blog-link');
   const displayBlogList = () => {
@@ -142,4 +144,24 @@ if (document.title === "Blog | Mitchell Lagaras Web Developer") {
       button.addEventListener('click', displayBlogList);
     });
   });
+  */
+  
+  if (document.title === "Blog | Mitchell Lagaras Web Developer") {
+  document.addEventListener("DOMContentLoaded", () => {
+    const blogMonthButtons = document.querySelectorAll('.blog-month-button');
+
+    blogMonthButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        const blogList = button.nextElementSibling; // gets the div.blog-list right after the button
+
+        if (blogList && blogList.classList.contains('blog-list')) {
+          blogList.querySelectorAll('.blog-link').forEach(link => {
+            link.classList.toggle('hidden');
+          });
+        }
+      });
+    });
+  });
+}
+
 }

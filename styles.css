@@ -988,7 +988,6 @@ footer > p {
 }
 
 .blog-month-button {
-  margin: 4px;
   background-color: #171834;
   color: white;
   border: 1px solid #171834;
@@ -1004,6 +1003,7 @@ footer > p {
 
 .blog-list {
   padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .blog-link {
@@ -1020,6 +1020,11 @@ footer > p {
   font-size: 1.2rem;
   line-height: 1.5;
   text-align: justify;
+  color: #1f1f1f;
+}
+
+.blog-post-title {
+  text-align: left;
 }
 
 .blog-post > time {
@@ -1044,6 +1049,7 @@ footer > p {
   width: 70%;
   padding: 12px;
   background-color: #171834;
+  border: 1px solid #171834;
   margin: auto;
   margin-top: 18px;
   text-decoration: none;
@@ -1052,7 +1058,8 @@ footer > p {
 
 .blog-reach-out:hover {
   cursor: pointer;
-  background-color: #0b0b1c;
+  background-color: white;
+  color: #171834;
 }
 
 @media screen and (max-width: 768px) {

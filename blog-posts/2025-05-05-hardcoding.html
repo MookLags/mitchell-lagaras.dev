@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="An introduction to Mitchell's blog including design philosophy and range of topics." />
+    <title>Is Hardcoding Really Worst Practice?</title>
+    <link rel="icon" href="../assets/icons/favicon-picture.jpg" type="image/jpg" />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1><a href="../index.html">Mitchell Lagaras</a></h1>
+      <button name="small-screen-nav-button" class="hamburger hidden">☰</button>
+      <nav role="navigation">
+        <ul class="nav-ul">
+          <li class="nav-li"><a href="../index.html">Home</a></li>
+          <li class="nav-li"><a href="../about.html">About</a></li>
+          <li class="nav-li projects-li">Projects<img src="../assets/coming-soon.gif" alt="Coming Soon!" /></li>
+          <li class="nav-li active-page"><a href="../blog.html">Blog</a></li>
+          <li class="nav-li"><a href="../contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="blog-post">
+      <h1 class="blog-post-title">IS HARDCODING REALLY WORST PRACTICE?</h1>
+      <h5 class="blog-post-subtitle">WHEN IT MAKES SENSE NOT TO USE A CRM</h5>
+      <time datetime="2025-29-30">May 5, 2025</time>
+      <section class="blog-post-body">
+        <br />
+        <p>
+          <span class="first-sentence-span">When you're learning about web development,</span> one of the first things you're told is: <em>don't hardcode!</em> That usually means avoiding manually writing out raw HTML (HyperText Markup Language) for every page of a website when there are more dynamic and maintainable ways to build a site. Frameworks, databses, templating, engines, and especially CMSs (Content Management Systems) are introduces as "better" ways to manage your content and structuring your site.
+        </p>
+        <br />
+        <p>
+          <span class="first-sentence-span">But is hardcoding always bad?</span> And is using a CMS always the best solution?
+        </p>
+        <br />
+        <p>
+          <span class="first-sentence-span">First, some context:</span> hardcoding in web development usually refers to manually writing static HTML (and often CSS or JavaScript) directly into files, rather than pulling that content from a database or templating system, and there are a few reasons that it's typically discouraged.
+        </p>
+        <br />
+        <p>
+          <span class="first-sentence-span">Scalability becomes a nightmare:</span> Every time you want to add or change something, you have to edit multiple files manually.
+        </p>
+        <br />
+        <p>
+          <span class="first-sentence-span">Maintenance is tedious:</span> One typo or forgotten update in a file can break or desync content across pages.
+        </p>
+        <br />
+        <p>
+          <span class="first-sentence-span">Lack of separation between content and structure:</span> Designers, developers, and content writers can't easily collaborate or work in parallel.
+        </p>
+        <br />
+        <p>
+          <span class="first-sentence-span">Limited flexibility:</span> You can't easily add features like serach, taggin, or user-generated content without rebuilding large portions of your site.
+        </p>
+        <br />
+        <p>
+          <span class="first-sentence-span">Security concerns:</span> Hardcoding can encourage practices like storing sensitive data directly in the frontend code, which is easily exposed in the browser.
+        </p>
+        <br />
+        <p>
+          <span class="first-sentence-span">So yes, when you're building</span> a larger website or a site expected to grow and change frequently, hardcoding does introduce a lot of unnecessary friction and risk. This leads naturally to CMSs, which were designed to solve these problems.
+        </p>
+        <br />
+        <p>
+          <span class="first-sentence-span">A CMS is a software platform</span> thta lets users create, edit, manage, and publish content without needing to write code. Popular examples include WordPress, Drupal, Ghost, and even headless CMSs like Sanity or Netlify CMS, and they offer several clear advantages.
+        </p>
+        <br />
+        <p>
+          <span class="first-sentence-span">Non-technical users can update content</span> through a user-friendly interface, reducing the need for a developer to intervene every time a blog post is written or an image is changed.
+        </p>
+        <br />
+        <p>
+          <span class="first-sentence-span">Templates and themes</span> keep your layout consistent across the site, reducing repetition and bugs.
+        </p>
+        <br />
+        <p>
+          <span class="first-sentence-span">Built in features</span> like serach, SEO (Search Engine Opimization) tools, plugins, and media handling save a ton of time.
+        </p>
+        <br />
+        <p>
+          <span class="first-sentence-span">Security patches and updates</span> help protect you from vulnerabilities like SQL injection or cross-site scripting, assuming the CSM is kept up to date.
+        </p>
+        <br />
+        <p>
+          <span class="first-sentence-span">Content reusability</span> allows the same data to appear in multiple formats (like a preview on the home page and full view on its own url) without duplication.
+        </p>
+        <br />
+        <p>
+          <span class="first-sentence-span">In many professional settings,</span> CMSs are the go-to solution for all these reasons. But I don't think they're always necessary--especially for small or low maintenance sites.
+        </p>
+        <br />
+        <p>
+          <span class="first-sentence-span">Not every site is a news portal</span> or e-commerce platform. Sometimes, it's a personal blog, a pet project, a digital resume, or a portflio with just a few static pages.
+        </p>
+        <br />
+        <p>
+          <span class="first-sentence-span">Take this blog, for example;</span> It's totally hardcoded. I already had the layout figured out, the styles are minimal, I don't need comments sections, categories, login systems, real-time updates, etcetera, etcetera. If I want to post something, I just spin up a new HTML file and then link it in its proper place with a single line of code.
+        </p>
+        <br />
+        <p>
+          <span class="first-sentence-span">It takes me about the same amount of time</span> to write and publish that page as it would to create a new post in WordPress or Netlify CMS--and I have full control over how everything looks and behaves. No plugins, no theme conflicts, no backend server to maintain. Easy peasy, having lots of fun.
+        </p>
+        <br />
+        <p>
+          <span class="first-sentence-span">So when does it make sense</span> to hardcode your site--or at least part of it?
+        </p>
+        <br />
+        <p>
+          <span class="first-sentence-span">You're building a simple landing page</span> or one-page site. If the content isn't going to change often (or ever), hardcoding is fast, reliable, and light on resources.
+        </p>
+        <br />
+        <p>
+          <span class="first-sentence-span">You're creating a digital portfolio.</span> Developers and designers often prefer hardcoded portfolios to maintain full creative control and avoid bloated CMSs.
+        </p>
+        <br />
+        <p>
+          <span class="first-sentence-span">You want fast load times with minimal dependencies.</span> This is one of the deciding factors when I hardcode personal projects. I like things to be lightweight and this is a good way to do it. A static site with raw HTML and CSS, maybe a little bit of JavaScript and PHP, is BLAZINGLY FAST compared to many CMS-based sites which can be weighted down by plugins and loads of JavaScript bundles.
+        </p>
+        <br />
+        <p>
+          <span class="first-sentence-span">You're practicing or learning.</span> Writing your own code to try and emulate the appearance of a site while not caring so much about where the data will be coming from is fine if you're practicing design. 
+        </p>
+        <br />
+        <p>
+          <span class="first-sentence-span">You just like to.</span> If you don't need fancy features and enjoy working close to the metal, why not? Not every project needs to scale to thousands of users.
+        </p>
+        <br />
+        <p>
+          <span class="first-sentence-span">Hardcoding isn't inherently bad.</span> Like most things in programming, it's contextually defined. Whether something is best- or worst-practice depends on the goals of the projects, the people maintaining it, and the audience using it.
+        </p>
+        <br />
+        <p>
+          <span class="first-sentence-span">CMSs are powerful,</span> flexible, and often the right tool for the job. But sometimes, a plain old .html file is the simpler, faster, and smarter choice.
+        </p>
+        <br />
+        <p>
+          <span class="first-sentence-span"></span>
+        </p>
+        <br />
+        <div>
+          <h2>WANT TO HEAR MORE?</h2>
+          <a class="blog-reach-out" href="../contact.html">REACH OUT</a>
+        </div>
+      </section>
+    </main>
+    <div class="wave-container-white-top"></div>
+    <div class="wave-container-double-blue"></div>
+    <footer>
+      <h2>Mitchell Lagaras</h2>
+      <span>Full Stack developer</span>
+      <p>© Mitchell Lagaras LLC :: 2025</p>
+    </footer>
+    <script src="../script.js"></script>
+  </body>
+</html>
