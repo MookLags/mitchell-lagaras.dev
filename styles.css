@@ -129,8 +129,19 @@ header > h1 > a {
   color: #1f1f1f;
 }
 
+#intro-article > span {
+  font-weight: bold;
+}
+
 #intro-article > h1 {
   font-size: 2rem;
+}
+
+#intro-article > p {
+  width: 40vw;
+  text-align: justify left;
+  margin-left: auto;
+  padding-top: 24px;
 }
 
 #rotating-text {
@@ -153,8 +164,8 @@ header > h1 > a {
   display: flex;
   justify-content: space-evenly;
   margin-left: auto;
-  margin-top: 3rem;
-  width: 75%;
+  margin-top: 2rem;
+  width: 70%;
 }
 
 .get-started-about-me > a {
@@ -169,21 +180,22 @@ header > h1 > a {
 }
 
 .get-started-about-me > a:hover {
-  background-color: #0b0b1c;
-  border: 1px solid #0b0b1c;;
+  background-color: #171834;
+  border: 1px solid #171834;;
   color: white;
 }
 
 .get-started-about-me > a:first-of-type {
-  border: 1px solid #0b0b1c;
-  background-color: #0b0b1c;
+  border: 1px solid #171834;
+  background-color: #171834;
   color: white;
   transition: all 0.5s ease;
 }
 
 .get-started-about-me > a:first-of-type:hover {
-  background-color: #292a5e;
-  border: 1px solid #292a5e;
+  background-color: white;
+  border: 1px solid #171834;
+  color: #1f1f1f;
   cursor: pointer;
 }
 
@@ -339,7 +351,7 @@ header > h1 > a {
 }
 
 .wave-container-dark-blue-top {
-  height: 20vh;
+  height: 30vh;
   background-color: #0b0b1c;
   position: relative;
 }
@@ -464,6 +476,15 @@ content: "";
   line-height: 1.4;
 }
 
+#get-started-p > p > a {
+  color: white;
+  text-decoration: underline;
+}
+
+#get-started-p > p > a:hover {
+  font-style: italic;
+}
+
 #get-started-section > section {
   display: flex;
   justify-content: space-evenly;
@@ -513,7 +534,7 @@ content: "";
 }
 
 .get-started-div > p {
-  padding: 8px;
+  padding: 0 15px;
 }
 
 #tech-stack-section {

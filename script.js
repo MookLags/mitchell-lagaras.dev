@@ -33,26 +33,11 @@ let everythingList = [
   'design',
   'copywriting',
   'coding',
-  'SEO',
-  'hosting',
-  'odds and ends',
-  'maintenance',
+  'campaigns',
+  'your brand\'s email'
 ]
 
-let previousTitleIndex = 0;
 let previousEverythingIndex = 0;
-
-let getRandomIndex = () => {
-  let randomIndex;
-
-  do {
-    randomIndex = Math.floor(Math.random() * titleList.length);
-  } while (randomIndex === previousTitleIndex);
-
-  previousTitleIndex = randomIndex;
-
-  return randomIndex;
-}
 
 let getEverythingListRandomIndex = () => {
   let randomIndex;
@@ -66,33 +51,26 @@ let getEverythingListRandomIndex = () => {
 
 // index.html
 if (document.title === "Mitchell Lagaras | Web Developer") {
-  const rotatingTextDiv = document.getElementById('rotating-text-div');
   const everythingDiv = document.getElementById('everything-div');
   const testimonialsOuter = document.getElementById('testimonials-outer');
   const testimonialsInner = document.getElementById('testimonials-inner');
   const rightButton = document.getElementById('test-button-right');
   const leftButton = document.getElementById('test-button-left');
   const rotateText = () => {
-    let randomTitle = titleList[getRandomIndex()].toUpperCase();
     let randomEverything = everythingList[getEverythingListRandomIndex()].toUpperCase();
 
-    rotatingTextDiv.innerHTML = `<p id="rotating-text" style='opacity: 0;'>${randomTitle}</p>`
-    everythingDiv.innerHTML = `<span id="everything-span" style='opacity: 0;'>${randomEverything}</span>`
+    everythingDiv.innerHTML = `<span id="everything-span" aria-live="polite" style='opacity: 0;'>${randomEverything}</span>`
   }
 
   setInterval(() => {
-    let rotatingText = document.getElementById('rotating-text');
     let rotatingEverythingSpan = document.getElementById('everything-span')
 
-    rotatingText.style.opacity = 0;
     rotatingEverythingSpan.style.opacity = 0;
 
     setTimeout(() => {
       rotateText()
-      let newRotatingText = document.getElementById('rotating-text');
       let newRotatingEverythingSpan = document.getElementById('everything-span');
       setTimeout(() => {
-        newRotatingText.style.opacity = 1;
         newRotatingEverythingSpan.style.opacity = 1;
       }, 20)
     }, 500)
