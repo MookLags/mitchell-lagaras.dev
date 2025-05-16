@@ -4,6 +4,10 @@
   font-family: sans-serif;
 }
 
+.bold-span {
+  font-weight: 600;
+}
+
 .hidden {
   display: none;
 }
@@ -757,7 +761,7 @@ content: "";
   height: 100%;
 }
 
-.form-div > h4 {
+.form-div > span {
   margin: auto;
   padding: 8px;
 }
@@ -852,7 +856,7 @@ content: "";
 
 .contact-data > span {
   display: flex;
-  color: grey;
+  color: #525252;
   font-size: 0.9rem;
 }
 
