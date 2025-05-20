@@ -211,14 +211,13 @@ header > h1 > a {
   width: 100vw;
   text-align: center;
   background-color: white;
+  color: #1f1f1f;
 }
 
 #demo-section > h2 {
-  color: #1f1f1f;
   width: fit-content;
   margin: auto;
   padding: 8px;
-  margin-bottom: 18px;;
 }
 
 #demo-header {
@@ -270,6 +269,25 @@ header > h1 > a {
 .scroll-image {
   height: 100%;
   object-fit: cover;
+}
+
+#mockup-div {
+  display: flex;
+  width: 50%;
+  padding-right: 3rem;
+  gap: 3rem;
+  padding-left: 3rem;
+}
+
+#mockup-div > img {
+  object-fit: contain;
+  height: auto;
+  width: 150px;
+  height: auto;
+}
+
+#mockup-div > img:first-of-type {
+  width: 500px;
 }
 
 #timeline {
@@ -541,75 +559,77 @@ content: "";
   padding: 0 15px;
 }
 
-#tech-stack-section {
+#mythbuster-section {
   display: flex;
-  justify-content: space-evenly;
   flex-direction: column;
+  align-items: center;
   width: 100vw;
-  margin: auto;
-  padding-top: 4rem;
-  text-align: center;
-  padding-bottom: 10rem;
+  height: auto;
+  background: linear-gradient(-175deg, #0b0b1c 54.9%, #171838 55%);
   color: white;
-  background: linear-gradient(-175deg, #0b0b1c 74.9%, #171838 75%);
 }
 
-#tech-stack-headers {
-  padding-bottom: 2.5rem;
+#mythbuster-main {
+  width: 80%;
 }
 
-#tech-stacks {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.tech-stack {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  max-width: calc(82px*4 + 12px*3);
-  height: 30vh;
-  text-align: center;
-}
-
-.tech-stack > p {
-  margin: auto;
-  padding-bottom: 1.5rem;
-  font-family: serif;
-  font-style: italic;
-}
-
-.tech-tool-container {
+#mythbuster-headers {
   display: flex;
   width: 100%;
-  flex-wrap: wrap;
-  gap: 12px;
+  margin-top: 5rem;
+  height: auto;
+  justify-content: space-between;
 }
 
-.tech-tool {
+#mythbuster-header-left {
+  width: auto;
+  font-size: 1.5rem;
+}
+
+#mythbuster-header-right {
+  width: 40%;
+  text-align: right;
+}
+
+#mythbuster-body {
+  display: flex;
+  justify-content: space-evenly;
+  display: flex;
+  margin: auto;
+  margin-top: 6rem;
+}
+
+.mythbuster {
   display: flex;
   flex-direction: column;
-  padding-bottom: 12px;
-  width: 4.5rem;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 10rem;
+  background-color: #252a5e;
 }
 
-.tech-tool > img {
-  width: 60px;
-  border: 2px solid #4f4f4f;
-  padding-top: 18px;
-  padding-bottom: 24px;
-  padding-left: 8px;
-  padding-right: 8px;
-  border-radius: 30px;
-  background-color: white;
+.mythbuster-outer {
+  border: 1px solid transparent;
+  border-radius: 10rem;
+  padding: 12px;
+  width: 25%;
+  height: 25rem;
+  transition: 0.3s ease;
 }
 
-.tech-tool > p {
-  width: 76px;
-  padding-top: 8px;
-  font-size: 0.8rem;
-  font-family: serif;
-  font-style: italic;
+.mythbuster-outer:hover {
+  border: 1px solid white;
+}
+
+.mythbuster > h3 {
+  padding: 0 2rem 2rem 2rem;
+  margin-top: -40px;
+}
+
+.mythbuster > p {
+  width: 80%;
 }
 
 #testimonials-section {
@@ -906,6 +926,10 @@ footer > p {
   color: #1f1f1f;
 }
 
+#about-headers > span {
+  font-size: 0.9rem;
+}
+
 #about-headers > h2 {
   font-size: 2rem;
 }
@@ -929,7 +953,7 @@ footer > p {
 #about-cta {
   display: flex;
   justify-content: space-evenly;
-  width: 60%;
+  width: 85%;
   margin: 3rem auto 0 auto;
 }
 
@@ -1126,6 +1150,11 @@ footer > p {
     justify-content: center;
   }
 
+  #intro-article > p {
+    margin: auto;
+    width: 80vw;
+  }
+
   #rotating-text {
     margin: auto;
     margin-bottom: 8px;
@@ -1214,6 +1243,25 @@ footer > p {
     flex-direction: column;
   }
 
+  #mockup-div {
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+    padding: 0 0 3rem 0;
+    gap: 0;
+  }
+
+  #mockup-div > img:first-of-type {
+    width: 300px;
+    height: auto;
+  }
+
+  #mockup-div > img:last-of-type {
+    width: 150px;
+    height: auto;
+    margin: auto;
+  }
+
   #timeline {
     display: flex;
     width: 100vw;
@@ -1263,26 +1311,58 @@ footer > p {
     margin: auto;
   }
 
-  #tech-stack-section {
-    width: 100vw;
-    padding-bottom: 0;
-    padding-top: 4rem;
-  }
-
-  #tech-stacks {
-    flex-direction: column;
-    margin: auto;
-  }
-
-  .tech-stack {
-    width: 333px;
+  #mythbuster-section {
+    width: 100%;
     height: auto;
+  }
+
+  #mythbuster-headers {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #mythbuster-header-left > span {
+    font-size: 1.2rem;
+    line-height: 2rem;
+  }
+
+  #mythbuster-header-right {
+    width: 80%;
+    text-align: center;
     margin: auto;
-    padding-bottom: 3rem;
+    padding-top: 2rem;
+  }
+
+  #mythbuster-body {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .mythbuster {
+    width: 100%;
+    min-height: 25rem;
+    margin: auto;
+    text-align: center;
+  }
+
+  .mythbuster-outer {
+    width: 85%;
+    margin: auto;
+    border: 1px solid white;
+  }
+
+  .mythbuster > h3 {
+    padding: 0;
+    padding-bottom: 28px;
+    margin: 0;
+  }
+
+  #test-headers {
+    width: 80%;
   }
 
   #testimonials-outer {
-    height: 60vh;
+    height: auto;
     width: 90vw;
   }
   

@@ -18,23 +18,14 @@ document.addEventListener("DOMContentLoaded", () => {
   hamburger.addEventListener("click", displayNavOnSmallScreens);
 })
 
-let titleList = [
-  'full-stack web developer',
-  'front-end web developer',
-  'back-end web developer',
-  'full-stack engineer',
-  'contract developer',
-  'subcontractor',
-  'team member',
-]
-
 let everythingList = [
   'everything',
   'design',
   'copywriting',
   'coding',
   'campaigns',
-  'your brand\'s email'
+  'your brand\'s email',
+  '508-Compliance',
 ]
 
 let previousEverythingIndex = 0;
@@ -50,7 +41,7 @@ let getEverythingListRandomIndex = () => {
 } 
 
 // index.html
-if (document.title === "Mitchell Lagaras | Web Developer") {
+if (document.title === "The Accessible Email Guy") {
   const everythingDiv = document.getElementById('everything-div');
   const testimonialsOuter = document.getElementById('testimonials-outer');
   const testimonialsInner = document.getElementById('testimonials-inner');
@@ -105,26 +96,8 @@ if (document.title === "Mitchell Lagaras | Web Developer") {
 }
 
 // blog
-if (document.title === "Blog | Mitchell Lagaras Web Developer") {
 
-/*
-  const blogMonthButton = document.querySelectorAll('.blog-month-button');
-  const blogLink = document.querySelectorAll('.blog-link');
-  const displayBlogList = () => {
-    blogLink.forEach(link => {
-      link.classList.toggle('hidden');
-    });
-  }
-
-  document.addEventListener("DOMContentLoaded", () => {
-    console.log('dom loaded');
-    blogMonthButton.forEach(button => {
-      button.addEventListener('click', displayBlogList);
-    });
-  });
-  */
-  
-  if (document.title === "Blog | Mitchell Lagaras Web Developer") {
+  if (document.title === "Blog | The Accessible Email Guy") {
   document.addEventListener("DOMContentLoaded", () => {
     const blogMonthButtons = document.querySelectorAll('.blog-month-button');
 
@@ -142,4 +115,3 @@ if (document.title === "Blog | Mitchell Lagaras Web Developer") {
   });
 }
 
-}
