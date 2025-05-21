@@ -990,6 +990,7 @@ footer > p {
 
 #contact-page > .contact-headers {
   margin: 8rem auto 4rem auto;
+  color: #1f1f1f;
 }
 
 #contact-page > section {
@@ -1111,6 +1112,113 @@ footer > p {
   color: #171834;
 }
 
+#services {
+  margin-top: 8rem;
+}
+
+#services-headers {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #1f1f1f;
+}
+
+#services-headers > span {
+  font-size: 1rem;
+}
+
+#retainer-section {
+  padding-top: 4rem;
+}
+
+#retainer-section-headers {
+  margin: 0 0 22px 50px;
+  color: #1f1f1f;
+}
+
+#retainer-button-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 22px auto;
+  width: 40vw;
+}
+
+.retainer-button {
+  border: 1px solid #171834;
+  background: #171834;
+  color: white;
+  font-size: 18px;
+  padding: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.retainer-button:hover {
+  background: white;
+  color: #171834;
+}
+
+.retainer-button-active {
+  background: white;
+  color: #171834;
+}
+
+.service-card {
+  border: 1px solid black;
+}
+
+#retainer-card-container {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100vw;
+}
+
+.service-card {
+  height: auto;
+  width: 25%;
+  color: #1f1f1f;
+  background: white;
+  border-radius: 5rem;
+  padding: 20px;
+}
+
+.service-card > h2 {
+  padding: 22px;
+  text-align: center;
+}
+
+.service-card > ul {
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+}
+
+.service-card > ul > li{
+  list-style-type: circle;
+  margin-left: 16px;
+  padding-bottom: 8px;
+}
+
+.service-card > p:first-of-type {
+  padding-bottom: 12px;
+  font-weight: bold;
+}
+
+.service-card > p:last-of-type {
+  padding: 12px 0 22px 0;
+  margin-top: 12px;
+}
+
+.price {
+  padding: 8px;
+  border-radius: 8px;
+  background: #171834;
+  color: white;
+}
+
+#copy-bundle-section {
+  color: white;
+  background: #171834;
+}
+
 @media screen and (max-width: 768px) {
   .wave-container-white-top::before {
     height: 31px;
@@ -1201,7 +1309,6 @@ footer > p {
 
   .nav-ul {
     display: flex;
-    justify-content: space-evenly;
     flex-direction: column;
     height: 100%;
     margin: auto;
@@ -1210,6 +1317,7 @@ footer > p {
   .nav-li {
     line-height: 3;
     background-color: transparent;
+    margin: auto;
   }
 
   .nav-li > a {
@@ -1445,5 +1553,29 @@ footer > p {
 
   .blog-post {
     width: 80%;
+  }
+
+  #retainer-card-container {
+    flex-direction: column;
+    width: 80vw;
+    margin: auto;
+    gap: 42px;
+  }
+
+  #retainer-section-headers {
+    text-align: center;
+    margin: 0;
+    padding-bottom: 22px;
+  }
+
+  .service-card {
+    width: 70vw;
+    margin: auto;
+  }
+
+  #retainer-button-container {
+    width: 100vw;
+    padding-bottom: 22px;
+    margin: auto;
   }
 }

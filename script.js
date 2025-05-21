@@ -97,7 +97,7 @@ if (document.title === "The Accessible Email Guy") {
 
 // blog
 
-  if (document.title === "Blog | The Accessible Email Guy") {
+if (document.title === "Blog | The Accessible Email Guy") {
   document.addEventListener("DOMContentLoaded", () => {
     const blogMonthButtons = document.querySelectorAll('.blog-month-button');
 
@@ -115,3 +115,30 @@ if (document.title === "The Accessible Email Guy") {
   });
 }
 
+if (document.title === "Services | The Accessible Email Guy") {
+  document.addEventListener("DOMContentLoaded", () => {
+    const pricingTable = {
+      1: { starter: 1500, standard: 3500, pro: 7000 },
+      3: { starter: 1350, standard: 3350, pro: 6850 },
+      6: { starter: 1250, standard: 3250, pro: 6650 },
+      12: { starter: 1000, standard: 3000, pro: 6500 }
+    };
+
+    const buttons = document.querySelectorAll('button[data-length]');
+    const prices = document.querySelectorAll('.price');
+
+    buttons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const length = btn.getAttribute('data-length');
+  
+        buttons.forEach(b => b.classList.remove('retainer-button-active'));
+        btn.classList.add('retainer-button-active');
+
+        prices.forEach(priceEl => {
+          const tier = priceEl.getAttribute('data-tier');
+          priceEl.textContent = `$${pricingTable[length][tier]}`;
+        })
+      })
+    })
+  })
+}
