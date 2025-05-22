@@ -7,7 +7,7 @@ const displayNavOnSmallScreens = () => {
   nav.style.transition = 'transform 0.3s ease';
 
   if (navVisible) {
-    nav.style.transform = 'translateY(300%)';
+    nav.style.transform = 'translateY(500%)';
   } else {
     nav.style.transform = 'translateY(155%)';
   }
