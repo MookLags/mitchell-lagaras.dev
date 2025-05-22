@@ -1228,7 +1228,59 @@ footer > p {
 
 #copy-bundle-section {
   color: white;
-  background: #171834;
+  background: #171838;
+}
+
+#template-bundle-section {
+  color: #1f1f1f;
+}
+
+.service-cta {
+  display: flex;
+  justify-content: space-evenly;
+  margin: auto;
+  width: 80vw;
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+
+.service-cta > span {
+  padding: 8px;
+}
+
+.service-cta:last-of-type {
+  padding-top: 30px;
+  width: 100vw;
+}
+
+.to-contact {
+  padding: 8px;
+  border: 1px solid #171838;
+  background: #171838;
+  color: white;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.to-contact:hover {
+  background: white;
+  color: #171838;
+  cursor: pointer;
+}
+
+.to-contact-two {
+  padding: 8px;
+  border: 1px solid white;
+  background: white;
+  color: #171838;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.to-contact-two:hover {
+  background: #171838;
+  color: white;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 768px) {
@@ -1588,6 +1640,17 @@ footer > p {
   #retainer-button-container {
     width: 100vw;
     padding-bottom: 22px;
+    margin: auto;
+  }
+
+  .service-cta {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .service-cta > a {
+    width: 50vw;
     margin: auto;
   }
 }
