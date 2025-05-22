@@ -1128,11 +1128,11 @@ footer > p {
 
 #retainer-section {
   padding-top: 4rem;
+  color: #1f1f1f;
 }
 
-#retainer-section-headers {
-  margin: 0 0 22px 50px;
-  color: #1f1f1f;
+.service-section-header {
+  padding: 22px 0 22px 50px;
 }
 
 #retainer-button-container {
@@ -1166,13 +1166,16 @@ footer > p {
   border: 1px solid black;
 }
 
-#retainer-card-container {
+.service-card-container {
   display: flex;
   justify-content: space-evenly;
   width: 100vw;
 }
 
 .service-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   height: auto;
   width: 25%;
   color: #1f1f1f;
@@ -1181,30 +1184,39 @@ footer > p {
   padding: 20px;
 }
 
-.service-card > h2 {
+.service-card-top > h2 {
   padding: 22px;
   text-align: center;
 }
 
-.service-card > ul {
+.service-card-top > ul {
   font-size: 1.1rem;
   margin-bottom: 12px;
 }
 
-.service-card > ul > li{
+.service-card-top > ul > li{
   list-style-type: circle;
   margin-left: 16px;
   padding-bottom: 8px;
 }
 
-.service-card > p:first-of-type {
+.service-card-top > p:first-of-type {
   padding-bottom: 12px;
   font-weight: bold;
 }
 
-.service-card > p:last-of-type {
+.service-card-bottom > p {
   padding: 12px 0 22px 0;
   margin-top: 12px;
+}
+
+.bundle-price {
+  padding: 8px;
+  border-radius: 8px;
+  background: #171834;
+  color: white;
+  width: fit-content;
+  font-size: 2rem;
 }
 
 .price {
@@ -1555,7 +1567,7 @@ footer > p {
     width: 80%;
   }
 
-  #retainer-card-container {
+  .service-card-container {
     flex-direction: column;
     width: 80vw;
     margin: auto;
