@@ -1032,16 +1032,20 @@ footer > p {
   border: 3px solid #171838;
   border-left: none;
   position: absolute;
-  gap: 8px;
+  gap: 20px;
   overflow: scroll;
   padding: 6rem 12px 12rem 18px;
 }
 
 .blog-month-button {
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+  margin: 5px;
+  width: 120px;
   background-color: #171834;
   color: white;
   border: 1px solid #171834;
-  padding: 12px;
   transition: 0.5s ease;
 }
 
@@ -1052,8 +1056,7 @@ footer > p {
 }
 
 .blog-list {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding: 0 0 1rem 0;
 }
 
 .blog-link {

@@ -103,12 +103,11 @@ if (document.title === "Blog | The Accessible Email Guy") {
 
     blogMonthButtons.forEach(button => {
       button.addEventListener('click', () => {
-        const blogList = button.nextElementSibling; // gets the div.blog-list right after the button
+        const blogList = button.nextElementSibling;
 
         if (blogList && blogList.classList.contains('blog-list')) {
-          blogList.querySelectorAll('.blog-link').forEach(link => {
-            link.classList.toggle('hidden');
-          });
+          // Toggle the blog-list visibility
+          blogList.classList.toggle('hidden');
         }
       });
     });
