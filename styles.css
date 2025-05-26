@@ -1024,6 +1024,21 @@ footer > p {
   text-align: justify;
 }
 
+.blog-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 0 15px 0;
+}
+
+.blog-img-caption {
+  text-align: center;
+  width: fit-content;
+  margin: 0 auto 15px auto;
+  font-style: italic;
+  font-size: 0.9rem;
+}
+
 #blog-post-container {
   display: flex;
   flex-direction: column;
@@ -1056,12 +1071,12 @@ footer > p {
 }
 
 .blog-list {
-  padding: 0 0 1rem 0;
+  padding: 0.5rem 0 1rem 0;
 }
 
 .blog-link {
   color: #1f1f1f;
-  padding-left: 2rem;
+  padding: 0 0 5px 1.5rem;
 }
 
 .blog-post {
